@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
    <head>
-      <title>Osaine</title>
+      <title>kosmetika click</title>
       <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
       <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
@@ -15,10 +15,43 @@
       <script src="assets/bootstrap-touchspin-master/src/jquery.bootstrap-touchspin.js"></script>
    </head>
    <body>
-      <header>
+  <header>
+      <div class="container header-container">
+            <div class="contacts-header vertical-align">
+               <ul>
+                  <li><a href="tel:+420777001571">+420 777 001 571</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-3">
+            <div class="social-links-contaner vertical-align">
+               <ul>
+                  <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+            <div class="auth-container">
+               <ul>
+                  <li><a href="#">Log in</a></li>
+                  <li><a href="#">Sing up</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="shopping-cart-container vertical-align">
+            <div class="row vertical-align">
+            <div class="cart-icon col-lg-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+            <div class="amount col-lg-10">
+               <h5>Váš nákupní košík</h5>
+               <p>2980 Kč</p>
+            </div>
+         </div>
+         </div>
+      </div>
+      <div class="sub-header-container">
          <div class="container">
+         <div class="row">
             <div class="navbar navbar-inverse">
-               <div class="navbar-header">
+               <div class="navbar-header col-lg-4">
                   <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
                   <div class="logo">
                      <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.png"></a>
@@ -43,47 +76,41 @@
                   <div class="nav-bar-menu-container">
                      <ul class="nav navbar-nav">
                         <li>
-                           <a href="#">Domů</a>
+                           <a href="#">O nás</a>
                         </li>
                         <li>
-                           <a href="about.html">O nás</a>
+                           <a href="#">Kontakty</a>
                         </li>
                         <li>
-                           <a href="#contact">Kontakty</a>
+                           <a href="#">Články</a>
+                        </li>
+                        <li>
+                           <a href="#">Propagace</a>
+                        </li>
+                        <li>
+                           <a href="#">Odeslání a platba</a>
                         </li>
                      </ul>
-                     <div class="lang-nav">
-                        <div class="sing-in">
-                           <a class="sign-in" href="singin.html">Přihlásit se</a>
-                        </div>
-                        <ul class="nav navbar-nav localisation">
-                           <li>
-                              <a href="#"><span>Česky</span><img alt="ch" src="images/czech-flag.png"></a>
-                           </li>
-                           <li>
-                              <a href="#about"><img alt="pl" src="images/poland-flag.png"><span>Polski</span></a>
-                           </li>
-                        </ul>
-                     </div>
                   </div>
                </div>
                <!--/.nav-collapse -->
             </div>
+            </div>
          </div>
+         <div>
       </header>
       <main>
          <div class="container products item">
             <nav>
-               <ul id="breadcrumb">
-                  <li><a href="#">Domů</a></li>
-                  <li><a href="#">Akné</a></li>
-                  <li><a href="#" class="active-crumb">Lamimat - "stahovač" pórů (50ml)</a></li>
+               <ul id="breadcrumb" class="col-lg-12">
+                  <li><a href="#">Domů </a></li>
+                  <li><a href="#">Lamigel - čisticí emulze</a></li>
                </ul>
             </nav>
             <div class="clearfix"></div>
             <div class="col-lg-12 about-item">
                <div class="raw">
-                  <div class="col-lg-4 col-sm-5 photo-wrap">
+                  <div class="col-lg-5 col-sm-5 photo-wrap">
                      <div id="myCarousel" class="carousel slide item-card" data-ride="carousel" data-interval="0">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -92,7 +119,7 @@
                            <li data-target="#myCarousel" data-slide-to="2"><span><img src="images/lamigel-cistici-emulze-250ml.jpeg" class="img-responsive" alt="img"></span></li>
                         </ol>
                         <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
+                        <div class="carousel-inner carousel-container">
                            <div class="item active">
                               <img src="images/lamicontrol-nocni-krem-50ml.jpeg"  alt="img">
                            </div>
@@ -105,24 +132,16 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 pull-right title-price-quantity">
+                  <div class="col-lg-6 col-sm-6 title-price-quantity">
                      <h1>Lamimat - "stahovač" pórů (50ml)</h1>
-                     <h2>1099,00 Kč</h2>
-                     <p>S DPH</p>
-                     <div class = "quantity-container">
-                        <div class ="quantity-input-wrap">
-                           <input id="quantity" type="text" value="1" name="quantity">
-                        </div>
-                        <script>
-                           $("input[name='quantity']").TouchSpin({
-                             verticalbuttons: true,
-                             verticalupclass: 'glyphicon glyphicon-plus',
-                             verticaldownclass: 'glyphicon glyphicon-minus',
-                             min: 1
-                           });
-                        </script>
+                     <p class="code">kód položky: 3697</p>
+                     <p class="price-before">1 099,00 Kč</p>
+                     <h2>1 099,00 <span>Kč</span></h2>
+                     <p class="dph">(S DPH)</p>
                       <form method="get" action="shoping-cart.html">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png"><span class="by-button-mobile">Koupit</span></button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
+                            <button class="btn btn-primary buy-btn" type="submit" data-toggle="modal" data-target="#koupit-modal">
+                                 <div class="icon-container"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>Koupit
+                              </button>
                  </form>
                      </div>
                   </div>
@@ -130,10 +149,11 @@
                <div class="clearfix"></div>
                <div class="product-info-container">
                   <ul class="nav nav-tabs product-info-navigation">
-                     <li role="presentation" class="active"><a href="#POPIS" data-toggle="tab">POPIS</a></li>
-                     <li role="presentation" ><a href="#DETAILY" data-toggle="tab">DETAILY PRODUKTU</a></li>
+                     <li role="presentation" class="active"><a href="#POPIS" data-toggle="tab">Popis</a></li>
+                     <li role="presentation" ><a href="#DETAILY" data-toggle="tab">Detaily produktu</a></li>
+                     <li role="presentation" ><a href="#RECENZE" data-toggle="tab">Recenze</a></li>
                   </ul>
-                  <div class="tab-content">
+                  <div class="tab-content karta-tovara-tabs-container">
                      <div id="POPIS" class="additional-info-tab tab-pane in active">
                         <p>Noční krém Lamicontrol má celou řádu příznivých účinků na pleť: zklidňuje mazové žlázy, zmírňuje podrážděnost pleti, změkčuje ji, zápasí s volnými radikály a zajišťuje rovnováhu mazu a vláhy.</p>
                         <div>
@@ -148,110 +168,19 @@
                         <p>Aplikace: rozetřete Lamicontrol krátce po vstřebání Lami séra. Lamicontrol používejte na noc a ráno smyjte.</p>
                      </div>
                      <div  id ="DETAILY" class="product-details-tab tab-pane">
-                        <p>Kód<span> 116</span></p>
-                        <p>Nejprve produkty skladem<span> 10 ks</span></p>
+                        <p>Detali</p>
+                     </div>
+                     <div  id ="RECENZE" class="product-details-tab tab-pane">
+                        <p>Recenze</p>
                      </div>
                   </div>
                </div>
             </div>
 
             <div class="clearfix"></div>
-            <!-- recommendations -->
-            <div class="recommend">
-               <h4><span>8 dalších produktů ve stejné kategorii:</span></h4>
-               <script>
-                  $(document).ready(function() { 
-                  	$("#owl-demo5").owlCarousel({
-                   
-                  	  autoPlay: 8000, //Set AutoPlay to 8 seconds
-                   
-                  	  items :4,
-                  	  itemsDesktop : [640,5],
-                  	  itemsDesktopSmall : [414,4],
-                  	  navigation : true
-                   
-                  	});
-                  	 //mobile tabs-to colapse
-                  $('.product-info-navigation').tabCollapse();
-                  }); 
-               </script>
-               <div id="owl-demo5" class="owl-carousel">
-                  <div class="item">
-                     <a href="single.html"><img alt="img" class="img-responsive" src="images/lamigel-cistici-emulze-250ml.jpeg"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">Lamigel - čisticí emulze </a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <a href="single.html"><img src="images/lamitonik-pletova-voda-250ml.jpeg" class="img-responsive"  alt="img"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">LLamiserum - matující "požírač tuku"</a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <a href="single.html"><img src="images/lamiphial-30-ml.jpeg" class="img-responsive" alt="img"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">Lamigel - čisticí emulze</a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <a href="single.html"><img src="images/lamicontrol-nocni-krem-50ml.jpeg" class="img-responsive" alt="img"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">Lamigel - čisticí emulze</a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <a href="single.html"><img src="images/lamigel-cistici-emulze-250ml-2.jpeg" class="img-responsive" alt="img"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">Lamigel - čisticí emulze</a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <a href="single.html"><img src="images/fluid-sunscreen-75-ml.jpeg" class="img-responsive" alt="img"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">Lamigel - čisticí emulze</a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button> <button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <a href="single.html"><img src="images/renovujici-denni-krem-50ml.jpeg" class="img-responsive" alt="img"></a>
-                     <div class="agile-product-text">
-                        <a href="single.html">Lamigel - čisticí emulze</a>
-                        <h6>450,41 Kč</h6>
-                        <div class="">
-                           <button class="btn btn-primary buy-btn" type="submit"><img alt="" src="images/shoping-cart.png">Koupit</button><button class="btn btn-primary like-btn" type="submit"><img alt="" src="images/like.png"></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- //recommendations -->
-         </div>
       </main>
       <footer>
+      <div class="footer-container">
          <div class="container">
             <div class="footer">
                <div class="footer-top">
@@ -260,7 +189,7 @@
                         <h4>Odběr novinek</h4>
                         <form action="#" method="post">
                            <div class="input-group">
-                              <input class="form-control email-subscribe-input" placeholder="zadejte svůj e-mail" type="email"> <span class="input-group-btn"><button class="btn btn-default email-subscribe-btn" type="button"><span class="input-group-btn">ok</span></button></span>
+                              <input class="form-control email-subscribe-input" placeholder="newsl@atter" type="email"> <span class="input-group-btn"><button class="btn btn-default email-subscribe-btn" type="button"><span class="input-group-btn">ok</span></button></span>
                            </div>
                            <!-- /input-group -->
                         </form>
@@ -271,13 +200,19 @@
                            <h4>Sledujte nás na</h4>
                            <ul>
                               <li>
-                                 <a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                               </li>
                               <li>
-                                 <a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                               </li>
                               <li>
-                                 <a href="#"><i aria-hidden="true" class="fa fa-pinterest-p"></i></a>
+                                 <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="fa fa-amazon" aria-hidden="true"></i></a>
                               </li>
                            </ul>
                         </div>
@@ -366,6 +301,7 @@
                </div>
             </div>
          </div>
+      </div>
       </footer>
       <script src="assets/bootstrap-tabcollapse-master/bootstrap-tabcollapse.js"></script>
       <script src="scripts/custom-scripts.js"></script> 
