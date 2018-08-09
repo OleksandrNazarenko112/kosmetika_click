@@ -530,26 +530,123 @@ input[required].basic-input:focus + label{
 }
 /*-- //home page --*/
 /*-- modal buy item --*/
-
+.koupit-modal .modal-content {
+	border: none;
+	border-radius: 0;
+}
+.koupit-modal.modal-dialog {
+	border-radius: 0;
+}
+.koupit-modal .modal-header {
+	padding: 15px 35px;
+	position: relative;
+	border: none;
+}
+.koupit-modal .modal-header p {
+	text-align: right;
+	font-size: 14px;
+	color: #a1a1a1;
+	margin-top: 30px;
+	padding-right: 0;
+}
+.close-modal {
+	font-size: 35px;
+	position: absolute;
+	    right: 0;
+    margin-right: 20px;
+}
 .koupit-modal .item-title {
 	display: block;
 	padding: 0 15px;
 	margin-bottom: 20px;
 }
 
+
 .koupit-modal.modal-dialog .modal-title {
-	text-align: center;
-	color: #00a000;
+	color: #000;
 	margin-bottom: 0;
+	font-size: 24px;
 }
 
 .koupit-modal.modal-dialog {
 	width: 920px;
 }
 
-
-
-
+.koupit-modal .close-button-purchase-item {
+		font-size: 25px;
+    color: #dddddd;
+    margin-right: 20px;
+    position: absolute;
+}
+.koupit-modal .item-multiply-price-container p{
+	font-size: 24px;
+}
+.koupit-modal .cart-item-container{
+	padding-bottom: 0;
+}
+.koupit-modal .total-check-container .total-check span,
+.koupit-modal .item-price-container p span,
+.koupit-modal .item-multiply-price-container p span {
+	font-size: 14px;
+}
+.koupit-modal .item-price-container p{
+	display: inline-block;
+	background-color: #feefe8;
+	padding: 2px 10px;
+	font-weight: 600;
+	color: #595959;
+	font-size: 24px;
+}
+.koupit-modal .close-button-purchase-item:hover {
+	color: #fe3c3c;
+}
+.koupit-modal .item-illustration-container {
+	position: relative;
+}
+.koupit-modal .place-order-container {
+	background-color: #feefe8;
+	padding: 0 10px 10px 10px;
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+      width: 35%;
+}
+.koupit-modal .place-order-container h4 {
+	padding: 10px;
+	text-align: left;
+	display: block;
+}
+.koupit-modal .place-order-container p {
+	display: block;
+	text-align: right;
+	margin-right: 0;
+	padding: 10px;
+	align-self: center;
+}
+.koupit-modal .total-check-container {
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+ .koupit-modal .back-to-shop-container {
+ 		position: relative;
+   	padding-bottom: 20px;
+ }
+ .koupit-modal .place-order-container .buy-btn {
+ 	width: 100%;
+ }
+  .koupit-modal .buy-btn.back-to-shop {
+ 	    position: absolute;
+    bottom: 10px;
+    border: 1px solid #4cc6f4;
+    background-color: #fff;
+    color: #4cc6f4;
+ }
+ .koupit-modal .buy-btn.back-to-shop:hover {
+ 	color: #fff;
+ 	background-color: #4cc6f4; 
+ }
 /*-- //modal buy item --*/
 
 
@@ -1770,6 +1867,11 @@ float: none;
 .item-price-container p, .item-multiply-price-container p {
 	font-size: 18px;
 }
+.total-check-container p span,
+.item-price-container p span,
+.item-multiply-price-container p span{
+	font-size: 14px;
+}
 .item-quantity-container {
 	display: flex;
 	justify-content: space-around;
@@ -1797,6 +1899,7 @@ float: none;
 }
 .total-check-container {
 	padding: 0 20px 20px 20px;
+	overflow: hidden;
 }
 .total-check-container h4 {
 	font-size: 25px;
@@ -1841,7 +1944,7 @@ float: none;
 .gift-cart-data-container label {
 	font-size: 14px;
 	font-weight: 100;
-	margin-right: 10px;
+	    width: 120px;
 }
 .gift-cart-data-container input {
 	font-size: 14px;
@@ -2152,9 +2255,6 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 		padding: 20px;
 		background-color: rgba(255, 255, 255, 0.8);
 	}
-	.btns-wrap {
-		display: none;
-	}
 	footer .container {
 		padding: 0;
 		width: 100%;
@@ -2182,7 +2282,15 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 		margin-left: 20px;
 	}
 }
-
+@media (max-width: 1200px) {
+	.footer .social-icons {
+		overflow: auto;
+		float: none;
+	}
+	.footer .email-subscription {
+		margin-bottom: 20px;
+	}
+}
 @media (max-width: 1024px) {
 	.container.products {
 		margin-top: 0;
@@ -2323,9 +2431,7 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 }
 
 @media (max-width: 767px) {
-	.empty-div {
-		display: none;
-	}
+
 	.email-subscription h4 {
 		float: none;
 		margin-bottom: 10px;
@@ -2391,12 +2497,74 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 		width: 100%;
 		display: inline-block;
 	}
-	#POPIS-collapse .panel-body div p {
-		margin-top: 35px;
+
+	.footer-nav-wrapper {
+		padding: 20px;
 	}
-	#POPIS-collapse ul {
-		margin: 0 0 20px 18px;
+	.footer-nav .empty-div {
+		display: none;
 	}
+	.footer-nav {
+		display: block;
+	}
+	.about-company,
+	.shop,
+	.contacts {
+		float: none;
+		width: 100%;
+	}
+	.footer-nav h4 {
+		display: inline-block;
+	}
+	.footer-nav-wrapper .fa-chevron-down {
+		font-size: 12px;
+		display: inline;
+	}
+	.email-subscription h4 {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.footer {
+		position: relative;
+	}
+	.footer-top {
+		padding: 20px;
+	}
+	.social-icons ul {
+		float: none;
+		display: flex;
+    justify-content: space-around;
+	}
+	.footer .social-icons li a {
+		margin-right: 0;
+	}
+	.footer .social-icons h4 {
+		margin-bottom: 20px;
+		float: none;
+	}
+	.footer .social-icons li:last-child {
+		margin-right: 0;
+	}
+.footer .about-company button,
+.footer .shop button {
+	width: 100%;
+  text-align: left;
+}
+.footer .about-company button.collapsed:after,
+.footer .shop button.collapsed:after {
+	content: "\f078";
+	font-family: FontAwesome;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.footer .about-company button:after,
+.footer .shop button:after {
+	content: "\f077";
+	font-family: FontAwesome;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
 }
 
 @media (max-width: 667px) {
@@ -2429,6 +2597,7 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	.title-price-quantity p {
 		display: none;
 	}
+
 }
 
 @media (max-width: 568px) {
@@ -2461,62 +2630,7 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	.agile-products .img-responsive {
 		height: 205px;
 	}
-	.footer-nav-wrapper {
-		padding: 20px;
-	}
-	.footer-nav .empty-div {
-		display: none;
-	}
-	.footer-nav {
-		display: block;
-	}
-	.about-company,
-	.shop,
-	.contacts {
-		float: none;
-		width: 100%;
-	}
-	.contacts {
-		text-align: center;
-		padding-bottom: 50px;
-	}
-	.contacts dt,
-	.contacts-about dt {
-		float: none;
-	}
-	.footer-nav h4 {
-		display: inline-block;
-	}
-	.footer-nav-wrapper .fa-chevron-down {
-		font-size: 12px;
-		display: inline;
-	}
-	.email-subscription h4 {
-		float: none;
-		margin-bottom: 10px;
-	}
-	.footer {
-		position: relative;
-	}
-	.footer-top {
-		padding: 20px;
-	}
-	.social-icons {
-		float: none;
-		position: absolute;
-		bottom: 85px;
-		width: 98%;
-		padding: 0;
-	}
-	.social-icons ul {
-		float: none;
-		display: inline-block;
-	}
-	.mobile-align {
-		display: flex;
-		justify-content: center;
-	}
-	.step-edit {
+		.step-edit {
 		float: none;
 		display: inline-block;
 		margin-top: 10px;

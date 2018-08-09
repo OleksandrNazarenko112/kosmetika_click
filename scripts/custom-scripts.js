@@ -21,14 +21,14 @@ $('.search-input-show').on('click', function(){
  mobileFooter();
     });
 function mobileFooter(){
-        if($(window).width() <= 425){
+        if($(window).width() <= 752){
         	$('#osaine').addClass('collapse');
         	$('#obchod').addClass('collapse');
         	$('.shop button').attr('data-toggle', 'collapse');
         	$('.about-company button').attr('data-toggle', 'collapse');
 
         }
-        if($(window).width() > 425 && $(window).width() <= 812){
+        if($(window).width() > 752 && $(window).width() <= 812){
         	$('#osaine').removeClass('collapse');
         	$('#obchod').removeClass('collapse');
         	$('.shop button').attr('data-toggle', '');
