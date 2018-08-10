@@ -244,6 +244,7 @@ box-shadow: 2px 1px 11px -2px rgba(128,128,128,1);
 	top: -9px;
 }
 .logo a img {
+	width: 100%;
 	max-width: 100%;
 }
 .logo a {
@@ -2283,6 +2284,39 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	}
 }
 @media (max-width: 1200px) {
+	/*-- header --*/
+		.navbar {
+			min-height: auto;
+		}
+		.navbar-brand {
+			float: left;
+		}
+		.navbar-toggle {
+			margin: 0;
+		}
+		.header-mobile-nav {
+    margin-top: 0;
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+		.navbar-header {
+			    display: flex;
+    align-items: center;
+		}
+	.logo {
+		position: static;
+	}
+	.logo a {
+		position: static;
+		    height: auto;
+	}
+	.logo a img {
+
+	}
+
+	/*--END: header-*/
 	.footer .social-icons {
 		overflow: auto;
 		float: none;
@@ -2297,6 +2331,9 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 .category-list-container ul li a {
 	width: 150px;
 	font-size: 16px;
+}
+	.nav.home-page-navigation > li > a {
+	padding:10px 40px;
 }
 	/*-- END: main page (index)-*/
 }
@@ -2319,9 +2356,7 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	.recommend {
 		display: none;
 	}
-	.nav.home-page-navigation > li > a {
-	padding:10px 40px;
-}
+
 }
 
 @media (max-width: 991px) {
@@ -2631,16 +2666,8 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	.carousel-indicators {
 		bottom: -73px;
 	}
-}
-
-@media (max-width: 425px) {
-	/*-- main page (index)-*/
-
-.category-list-container ul li a {
-	width: 138px;
-	font-size: 14px;
-}
-.nav-tabs.home-page-navigation {
+		/*--main page(index)-*/
+	.nav-tabs.home-page-navigation {
 	padding: 10px;
 }
 .nav-tabs.home-page-navigation > li{
@@ -2655,6 +2682,17 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 .nav.home-page-navigation > li.active > a:hover
 .nav-tabs.home-page-navigation > li > a {
 	margin-right: 0;
+}
+	/*-- END: main page(index)-*/
+}
+
+@media (max-width: 425px) {
+	/*-- main page (index)-*/
+
+.category-list-container ul li a {
+	width: 138px;
+	font-size: 14px;
+}
 }
 	/*-- END: main page(index)-*/
 

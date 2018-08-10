@@ -1,15 +1,5 @@
 $(document).ready(function() { 
-//mobile footer and header
-$('.search-input-show').on('click', function(){
-
-	$('.logo').addClass('hide');
-	$('.header-search-input').removeClass('hide');
-	$('.navbar-inverse .navbar-toggle').css('margin-right', '0');
-	$('.search-input-show').addClass('hide');
-	$('.header-mobile-nav img').css('margin-left', '0');
-	$('.navbar-header .sidebar-search-input').focus();
-
-});
+//mobile footer 
    $(window).resize(function(){
         if ($(window).width() > 1200){
         	$('.logo').removeClass('hide');
