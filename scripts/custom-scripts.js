@@ -50,4 +50,13 @@ function mobileFooter(){
         $(this).hide();
         $('.promo-code-container input').addClass('show').focus();
     })
+    //mobile nav bar 
+    $('.navbar-toggle').on('click', function(){
+        $('.mobile-navigation').removeClass('collapse');
+        $('#mask').addClass('active');
+    });
+    $('.mobile-navigation .close').on('click', function(){
+        $('.mobile-navigation').addClass('collapse');
+        $('#mask').removeClass('active');
+    });
 });
