@@ -15,7 +15,8 @@
       <script src="assets/bootstrap-touchspin-master/src/jquery.bootstrap-touchspin.js"></script>
    </head>
    <body>
-  <header>
+       <div id="mask"></div>
+      <header>
       <div class="container header-container">
             <div class="contacts-header vertical-align">
                <ul>
@@ -51,30 +52,25 @@
          <div class="container">
          <div class="row">
             <div class="navbar navbar-inverse">
-               <div class="navbar-header col-lg-4">
-                  <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+               <div class="navbar-header col-lg-4 col-sm-12 col-sx-12">
+                  <button class="navbar-toggle" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
                   <div class="logo">
                      <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.png"></a>
                   </div>
-                  <div class="col-sm-7 col-xs-9 header-search-input hide">
-                     <form action="#" method="post">
-                        <div class="input-group">
-                           <span class="input-group-btn"><button class="btn btn-default sidebar-search-btn" type="button"><span class="input-group-btn"><span class="input-group-btn"><img alt="" src="images/magnifier.png"></span></span></button></span> <input class="form-control sidebar-search-input" name="Search" placeholder="Vyhledávání" type="search">
-                        </div>
-                        <!-- /input-group -->
-                     </form>
-                  </div>
+
                   <!-- /.col-lg-12 -->
                   <div class="header-mobile-nav">
                      <ul>
-                        <li class="search-input-show"><a href="#" ><img alt="search" src="images/search-mobile-icon.png"></a></li>
-                        <li><a href="#"><img alt="shoping-cart" src="images/shoping-cart-mobile-icon.png"></a></li>
+                        <li class="search-input-show"><a href="#" ><i class="fa fa-key" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
                      </ul>
                   </div>
                </div>
-               <div class="collapse navbar-collapse">
+               <div class="mobile-navigation collapse navbar-collapse">
                   <div class="nav-bar-menu-container">
-                     <ul class="nav navbar-nav">
+                        <a href="javascript:void(0)" class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+                     <ul class="nav navbar-nav ">
                         <li>
                            <a href="#">O nás</a>
                         </li>
@@ -97,7 +93,7 @@
             </div>
             </div>
          </div>
-         <div>
+         </div>
       </header>
       <main>
          <div class="container products item">
@@ -109,7 +105,7 @@
             </nav>
             <div class="clearfix"></div>
             <div class="col-lg-12 about-item">
-               <div class="raw">
+               <div class="row">
                   <div class="col-lg-5 col-sm-5 photo-wrap">
                      <div id="myCarousel" class="carousel slide item-card" data-ride="carousel" data-interval="0">
                         <!-- Indicators -->
