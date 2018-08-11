@@ -35,6 +35,9 @@ body a:hover {
     display: block;
     width: 100%;
 }
+.mobile-back {
+	display: none;
+}
 .nav-bar-menu-container .close {
 	z-index: -1;
 	 }
@@ -544,7 +547,7 @@ input[required].basic-input:focus + label{
     border-radius: 5px;
 }
 /*-- //home page --*/
-/*-- modal buy item --*/
+/*-- modal cart --*/
 .koupit-modal .modal-content {
 	border: none;
 	border-radius: 0;
@@ -662,7 +665,7 @@ input[required].basic-input:focus + label{
  	color: #fff;
  	background-color: #4cc6f4; 
  }
-/*-- //modal buy item --*/
+/*-- //modal cart --*/
 
 
 
@@ -2399,14 +2402,41 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	}
 	/*--END: carousel --*/
 		/*-- order --*/
+
 			.cart-container {
 				display: none;
 			}
 			.customer-form {
 				margin-bottom: 40px;
 			}
+
 		/*--END: order --*/
 
+			/*--kosmetika.click_korzina --*/
+
+/*--END: kosmetika.click_korzina --*/
+							/*-- modal cart --*/
+	 .modal.in .koupit-modal.modal-dialog {
+		width: 100%;
+		margin: 0;
+
+	}
+	#koupit-modal {
+				padding: 0!important;
+	}
+.koupit-modal .item-quantity-and-price-container {
+		display: flex;
+		justify-content: space-between;
+}
+.koupit-modal .item-quantity-container a {
+	margin: 0 20px;
+}
+.koupit-modal .item-multiply-price-container p,
+.koupit-modal .item-price-container p {
+	font-size: 17px;
+
+}
+	/*-- END: modal cart --*/
 }
 @media (max-width: 1024px) {
 	.additional-info-images .inner-shadow {
@@ -2549,6 +2579,24 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	margin: 30px 0 0 0;
 }
 	/*-- END:main page (index)-*/
+
+	/*--  modal cart --*/
+			.koupit-modal .modal-header p {
+			display: none;
+		}
+		.koupit-modal.modal-dialog .modal-title {
+			text-align: center;
+		}
+	.koupit-modal .mobile-back {
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+
+}
+.mobile-back i {
+    margin-right: 5px;
+}
+		/*--END:modal cart --*/
 }
 
 @media (max-width: 767px) {
@@ -2675,6 +2723,21 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	margin-left: 10px;
 }
 
+	/*--  modal cart --*/
+.koupit-modal	.item-grid-container > .vertical-align {
+		display: block;
+
+	}
+	.koupit-modal .item-illustration-container img {
+		height: 200px;
+	}
+	.koupit-modal .item-title {
+		margin-top: 20px;
+	}
+	.koupit-modal .place-order-container {
+		width: 55%;
+	}
+	/*-- END: modal cart --*/
 }
 
 @media (max-width: 667px) {
@@ -2751,6 +2814,38 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 		width: 100%;
 	} 
 		/*--END: osmetika.click_kartochka --*/
+		.koupit-modal .item-illustration-container img {
+			height: auto;
+		}
+		.koupit-modal .item-quantity-and-price-container {
+			display: block;
+		}
+		.item-price-container {
+			 margin-bottom: 20px;
+		}
+		.koupit-modal .item-title {
+			text-align: center;
+		}
+		.koupit-modal .item-price-container p {
+    	font-size: 17px;
+    	text-align: center;
+    	display: block;
+		}
+		.item-quantity-container {
+			margin-bottom: 20px;
+		}
+		.koupit-modal .item-multiply-price-container p {
+			text-align: center;
+		}
+		.koupit-modal .place-order-container {
+			width: 100%;
+		}
+		.koupit-modal .back-to-shop {
+			display: none;
+		}
+
+	/*--  modal cart --*/
+		/*-- END:modal cart --*/
 }
 @media (max-width: 425px) {
 	/*-- main page (index)-*/
