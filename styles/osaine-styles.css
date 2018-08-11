@@ -2697,14 +2697,31 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 	margin-right: 0;
 }
 	/*-- END: main page(index)-*/
+
+}
+@media (max-width: 567px) {
+			/*--osmetika.click_kartochka --*/
 		.photo-wrap {
 		width: auto;
+		padding-left: 15px;
+		margin-bottom: 20px;
 	}
 	.title-price-quantity {
 		width: auto;
 	}
+.title-price-quantity {
+		display: block;
+		text-align: center;
+	}
+	.title-price-quantity .buy-btn {
+		width: 100%;
+	}
+	.product-info-container .nav-tabs li.active,
+	.product-info-container .nav-tabs li {
+		width: 100%;
+	} 
+		/*--END: osmetika.click_kartochka --*/
 }
-
 @media (max-width: 425px) {
 	/*-- main page (index)-*/
 
