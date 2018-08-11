@@ -8,9 +8,9 @@ $(document).ready(function() {
         	$('.search-input-show').removeClass('hide');
         	$('.header-mobile-nav img').css('margin-left', '20px');
         }
- mobileFooter();
+     mobileFooter();
     });
-function mobileFooter(){
+    function mobileFooter(){
         if($(window).width() <= 752){
         	$('#osaine').addClass('collapse');
         	$('#obchod').addClass('collapse');
@@ -61,14 +61,10 @@ function mobileFooter(){
     });
     // carusele 
     $("#myCarousel").swipe({
-
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
-
-  },
-  allowPageScroll:"vertical"
-
-});
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll:"vertical"
+    });
 });

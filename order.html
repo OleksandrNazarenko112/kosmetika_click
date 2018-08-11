@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
     <title>kosmetika click</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
-    <link href="assets/jasny-bootstrap/css/jasny-bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
-    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
-    <link href="styles/osaine-styles.css" media="all" rel="stylesheet" type="text/css">
-    <script src="assets/jquery-2.2.4.min.js"></script>
+    <link href="libs/bootstrap-3.3.7-dist/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+    <link href="libs/jasny-bootstrap/css/jasny-bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="libs/font-awesome-4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="styles/kosmetika-click.css" media="all" rel="stylesheet" type="text/css">
+    <script src="libs/jquery-2.2.4.min.js"></script>
 </head>
-
 <body>
-        <div id="mask"></div>
-      <header>
-      <div class="container header-container">
+    <div id="mask"></div>
+    <header>
+        <div class="container header-container">
             <div class="contacts-header vertical-align">
-               <ul>
-                  <li><a href="tel:+420777001571">+420 777 001 571</a></li>
-               </ul>
+                <ul>
+                    <li><a href="tel:+420777001571">+420 777 001 571</a></li>
+                </ul>
             </div>
             <div class="col-lg-3">
-            <div class="social-links-contaner vertical-align">
-               <ul>
-                  <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
-               </ul>
+                <div class="social-links-contaner vertical-align">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="auth-container">
+                    <ul>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Sing up</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="auth-container">
-               <ul>
-                  <li><a href="#">Log in</a></li>
-                  <li><a href="#">Sing up</a></li>
-               </ul>
+            <div class="shopping-cart-container vertical-align">
+                <div class="row">
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#koupit-modal" class="vertical-align">
+                        <div class="cart-icon col-lg-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                        <div class="amount col-lg-10">
+                            <h5>Váš nákupní košík</h5>
+                            <p>2980 Kč</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-         </div>
-         <div class="shopping-cart-container vertical-align">
-            <div class="row vertical-align">
-            <div class="cart-icon col-lg-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
-            <div class="amount col-lg-10">
-               <h5>Váš nákupní košík</h5>
-               <p>2980 Kč</p>
+        </div>
+        <div class="sub-header-container">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar navbar-inverse">
+                        <div class="navbar-header col-lg-4 col-sm-12 col-sx-12">
+                            <button class="navbar-toggle" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                            <div class="logo">
+                                <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.png"></a>
+                            </div>
+                            <!-- /.col-lg-12 -->
+                            <div class="header-mobile-nav">
+                                <ul>
+                                    <li class="search-input-show"><a href="#"><i class="fa fa-key" aria-hidden="true"></i></a></li>
+                                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#koupit-modal"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mobile-navigation collapse navbar-collapse">
+                            <div class="nav-bar-menu-container">
+                                <a href="javascript:void(0)" class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                <ul class="nav navbar-nav ">
+                                    <li>
+                                        <a href="#">O nás</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kontakty</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Články</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Propagace</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Odeslání a platba</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
             </div>
-         </div>
-         </div>
-      </div>
-      <div class="sub-header-container">
-         <div class="container">
-         <div class="row">
-            <div class="navbar navbar-inverse">
-               <div class="navbar-header col-lg-4 col-sm-12 col-sx-12">
-                  <button class="navbar-toggle" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-                  <div class="logo">
-                     <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.png"></a>
-                  </div>
-
-                  <!-- /.col-lg-12 -->
-                  <div class="header-mobile-nav">
-                     <ul>
-                        <li class="search-input-show"><a href="#" ><i class="fa fa-key" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="mobile-navigation collapse navbar-collapse">
-                  <div class="nav-bar-menu-container">
-                        <a href="javascript:void(0)" class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-
-                     <ul class="nav navbar-nav ">
-                        <li>
-                           <a href="#">O nás</a>
-                        </li>
-                        <li>
-                           <a href="#">Kontakty</a>
-                        </li>
-                        <li>
-                           <a href="#">Články</a>
-                        </li>
-                        <li>
-                           <a href="#">Propagace</a>
-                        </li>
-                        <li>
-                           <a href="#">Odeslání a platba</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <!--/.nav-collapse -->
-            </div>
-            </div>
-         </div>
-         </div>
-      </header>
+        </div>
+    </header>
     <main>
         <div class="container products item order">
             <nav>
@@ -333,137 +331,138 @@
             </div>
         </div>
     </main>
-      <footer>
-      <div class="footer-container">
-         <div class="container">
-            <div class="footer">
-               <div class="footer-top">
-                  <div class="row">
-                     <div class="col-lg-6 col-sm-12 col-xs-12 email-subscription">
-                        <h4>Odběr novinek</h4>
-                        <form action="#" method="post">
-                           <div class="input-group">
-                              <input class="form-control email-subscribe-input" placeholder="newsl@atter" type="email"> <span class="input-group-btn"><button class="btn btn-default email-subscribe-btn" type="button"><span class="input-group-btn">ok</span></button></span>
-                           </div>
-                           <!-- /input-group -->
-                        </form>
-                     </div>
-                     <!-- /.col-lg-6 -->
-                     <div class="social-icons col-lg-6 col-sm-12 col-sx-12">
-                        <div class="mobile-align">
-                           <h4>Sledujte nás na</h4>
-                           <ul class="social-icons-list">
-                              <li>
-                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                              </li>
-                              <li>
-                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                              </li>
-                              <li>
-                                 <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                              </li>
-                              <li>
-                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                              </li>
-                              <li>
-                                 <a href="#"><i class="fa fa-amazon" aria-hidden="true"></i></a>
-                              </li>
-                           </ul>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 email-subscription">
+                                <h4>Odběr novinek</h4>
+                                <form>
+                                    <div class="input-group">
+                                        <input class="form-control email-subscribe-input" placeholder="newsl@atter" type="email"> <span class="input-group-btn"><button class="btn btn-default email-subscribe-btn" type="button"><span class="input-group-btn">ok</span></button>
+                                        </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                </form>
+                            </div>
+                            <!-- /.col-lg-6 -->
+                            <div class="social-icons col-lg-6 col-sm-12 col-sx-12">
+                                <div class="mobile-align">
+                                    <h4>Sledujte nás na</h4>
+                                    <ul class="social-icons-list">
+                                        <li>
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-amazon" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- /.row -->
-               <div class="footer-nav-wrapper">
-                  <div class="footer-nav">
-                     <div class="col-lg-2 empty-div"></div>
-                     <div class="about-company">
-                        <button data-toggle="" data-target="#osaine" class="collapsed">Osaine</button>
-                        <div id="osaine">
-                           <ul>
-                              <li>
-                                 <a href="#">Osaine</a>
-                              </li>
-                              <li>
-                                 <a href="#">Filozofie Osaine</a>
-                              </li>
-                              <li>
-                                 <a href="#">Fotografie a videa klientů</a>
-                              </li>
-                              <li>
-                                 <a href="#">Seznam přípravků</a>
-                              </li>
-                              <li>
-                                 <a href="#">Akce a slevy</a>
-                              </li>
-                              <li>
-                                 <a href="#">Dárkové poukazy</a>
-                              </li>
-                              <li>
-                                 <a href="#">Můj účet</a>
-                              </li>
-                              <li>
-                                 <a href="#">Články</a>
-                              </li>
-                           </ul>
+                    </div>
+                    <!-- /.row -->
+                    <div class="footer-nav-wrapper">
+                        <div class="footer-nav">
+                            <div class="col-lg-2 empty-div"></div>
+                            <div class="about-company">
+                                <button data-toggle="" data-target="#osaine" class="collapsed">Osaine</button>
+                                <div id="osaine">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Osaine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Filozofie Osaine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fotografie a videa klientů</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Seznam přípravků</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Akce a slevy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dárkové poukazy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Můj účet</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Články</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="shop">
+                                <button data-toggle="" data-target="#obchod" class="collapsed">Obchod</button>
+                                <div id="obchod">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Obchodní podmínky</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Možnosti platby a dopravy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Zpracování osobních údajů</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Často kladené otázky</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reklamační řád (Formulář)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vrácení zboží (Formulář)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <h4>Kontaktní informace</h4>
+                                <address>Matti & Inka, s.r.o.
+                                    <br>Ciolkovského 851/3, 161 00 Praha 6</address>
+                                <dl>
+                                    <dt>IČO:</dt>
+                                    <dd>24317837</dd>
+                                    <dt>Tel.: </dt>
+                                    <dd><a href="tel:+420777001571">+420 777 001 571</a></dd>
+                                </dl>
+                                <p><a href="#">Reklamační řád (Formulář)</a></p>
+                                <dl>
+                                    <dt>email:</dt>
+                                    <dd><a href='ma&#105;&#108;to&#58;info&#64;%&#54;Fsain%6&#53;-es&#104;%6F&#112;&#46;%&#54;3z'>&#105;nfo&#64;&#111;saine-eshop&#46;cz</a></dd>
+                                </dl>
+                            </div>
                         </div>
-                     </div>
-                     <div class="shop">
-                        <button data-toggle="" data-target="#obchod" class="collapsed">Obchod</button>
-                        <div id="obchod">
-                           <ul>
-                              <li>
-                                 <a href="#">Obchodní podmínky</a>
-                              </li>
-                              <li>
-                                 <a href="#">Možnosti platby a dopravy</a>
-                              </li>
-                              <li>
-                                 <a href="#">Zpracování osobních údajů</a>
-                              </li>
-                              <li>
-                                 <a href="#">Často kladené otázky</a>
-                              </li>
-                              <li>
-                                 <a href="#">Reklamační řád (Formulář)</a>
-                              </li>
-                              <li>
-                                 <a href="#">Vrácení zboží (Formulář)</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="contacts">
-                        <h4>Kontaktní informace</h4>
-                        <address>Matti & Inka, s.r.o.<br>Ciolkovského 851/3, 161 00 Praha 6</address>
-                        <dl>
-                           <dt>IČO:</dt>
-                           <dd>24317837</dd>
-                           <dt>Tel.: </dt>
-                           <dd><a href="tel:+420777001571">+420 777 001 571</a></dd>
-                        </dl>
-                        <p><a href="#">Reklamační řád (Formulář)</a></p>
-                        <dl>
-                           <dt>email:</dt>
-                           <dd><a href='ma&#105;&#108;to&#58;info&#64;%&#54;Fsain%6&#53;-es&#104;%6F&#112;&#46;%&#54;3z'>&#105;nfo&#64;&#111;saine-eshop&#46;cz</a></dd>
-                        </dl>
-                     </div>
-                  </div>
-               </div>
-               <div class="footer-copyrights">
-                  Copyright © 2017 Matti & Inka, s.r.o. All Rights Reserved.
-               </div>
+                    </div>
+                    <div class="footer-copyrights">
+                        Copyright © 2017 Matti & Inka, s.r.o. All Rights Reserved.
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      </footer>
-    <script src="assets/bootstrap-tabcollapse-master/bootstrap-tabcollapse.js"></script>
+        </div>
+    </footer>
+    <script src="libs/bootstrap-tabcollapse-master/bootstrap-tabcollapse.js"></script>
     <script src="scripts/custom-scripts.js"></script>
-    <script src="assets/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
-    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="assets/TouchSwipe-Jquery-Plugin-master/jquery.touchSwipe.min.js"></script>
+    <script src="libs/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="libs/TouchSwipe-Jquery-Plugin-master/jquery.touchSwipe.min.js"></script>
     <script src="scripts/bootstrap-carousel.js"></script>
-    <script src="assets/owl-carousel/owl.carousel.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.js"></script>
 </body>
-
 </html>
