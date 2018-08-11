@@ -2822,14 +2822,14 @@ box-shadow: inset -1px 6px 10px -2px rgba(168,168,168,1);
 		}
 		.item-price-container {
 			 margin-bottom: 20px;
+			 display: flex;
+			 justify-content: center;
 		}
 		.koupit-modal .item-title {
 			text-align: center;
 		}
 		.koupit-modal .item-price-container p {
     	font-size: 17px;
-    	text-align: center;
-    	display: block;
 		}
 		.item-quantity-container {
 			margin-bottom: 20px;
